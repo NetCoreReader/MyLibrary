@@ -1,0 +1,292 @@
+﻿<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>ExecuteNonQuery</Title>
+      <Shortcut>_menq</Shortcut>
+      <Author>Facia026</Author>
+      <Description>Sql Kayıt Ekler. bool Değer Döner</Description>
+    </Header>
+    <Snippet>
+      <References>
+        <Reference>
+          <Assembly>MyLibrary.dll</Assembly>
+        </Reference>
+      </References>
+      <Imports>
+        <Import>
+          <Namespace>MyLibrary</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Literal>
+          <ID>SqlConnection</ID>
+          <ToolTip>Bağlantı Bilgisi</ToolTip>
+          <Default>""</Default>
+        </Literal>
+        <Literal>
+          <ID>SqlCommand</ID>
+          <ToolTip>Sql Sorgusu</ToolTip>
+          <Default>""</Default>
+        </Literal>
+        <Literal>
+          <ID>SqlParams</ID>
+          <ToolTip>Sql Parametreleri</ToolTip>
+          <Default>, </Default>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp">
+        <![CDATA[MyConnect.Instance.ExecuteNonQuery($SqlConnection$, $SqlCommand$, CommandType.Text, 60, out MyConnect.Instance.exp$SqlParams$);]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>ExecuteScalar</Title>
+      <Shortcut>_mes</Shortcut>
+      <Author>Facia026</Author>
+      <Description>Sql Kayıt Ekler. object Değer Döner</Description>
+    </Header>
+    <Snippet>
+      <References>
+        <Reference>
+          <Assembly>MyLibrary.dll</Assembly>
+        </Reference>
+      </References>
+      <Imports>
+        <Import>
+          <Namespace>MyLibrary</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Literal>
+          <ID>SqlConnection</ID>
+          <ToolTip>Bağlantı Bilgisi</ToolTip>
+          <Default>""</Default>
+        </Literal>
+        <Literal>
+          <ID>SqlCommand</ID>
+          <ToolTip>Sql Sorgusu</ToolTip>
+          <Default>""</Default>
+        </Literal>
+        <Literal>
+          <ID>SqlParams</ID>
+          <ToolTip>Sql Parametreleri</ToolTip>
+          <Default>, </Default>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp">
+        <![CDATA[MyConnect.Instance.ExecuteScalar($SqlConnection$, $SqlCommand$, CommandType.Text, 60, out MyConnect.Instance.exp$SqlParams$);]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>ExecuteScalar_Int</Title>
+      <Shortcut>_mesi</Shortcut>
+      <Author>Facia026</Author>
+      <Description>Sql Kayıt Ekler. int Değer Döner</Description>
+    </Header>
+    <Snippet>
+      <References>
+        <Reference>
+          <Assembly>MyLibrary.dll</Assembly>
+        </Reference>
+      </References>
+      <Imports>
+        <Import>
+          <Namespace>MyLibrary</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Literal>
+          <ID>SqlConnection</ID>
+          <ToolTip>Bağlantı Bilgisi</ToolTip>
+          <Default>""</Default>
+        </Literal>
+        <Literal>
+          <ID>SqlCommand</ID>
+          <ToolTip>Sql Sorgusu</ToolTip>
+          <Default>""</Default>
+        </Literal>
+        <Literal>
+          <ID>SqlParams</ID>
+          <ToolTip>Sql Parametreleri</ToolTip>
+          <Default>, </Default>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp">
+        <![CDATA[MyConnect.Instance.ExecuteScalar_Int($SqlConnection$, $SqlCommand$, CommandType.Text, 60, out MyConnect.Instance.exp$SqlParams$);]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>ExecuteScalar_Decimal</Title>
+      <Shortcut>_mesd</Shortcut>
+      <Author>Facia026</Author>
+      <Description>Sql Kayıt Ekler. decimal Değer Döner</Description>
+    </Header>
+    <Snippet>
+      <References>
+        <Reference>
+          <Assembly>MyLibrary.dll</Assembly>
+        </Reference>
+      </References>
+      <Imports>
+        <Import>
+          <Namespace>MyLibrary</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Literal>
+          <ID>SqlConnection</ID>
+          <ToolTip>Bağlantı Bilgisi</ToolTip>
+          <Default>""</Default>
+        </Literal>
+        <Literal>
+          <ID>SqlCommand</ID>
+          <ToolTip>Sql Sorgusu</ToolTip>
+          <Default>""</Default>
+        </Literal>
+        <Literal>
+          <ID>SqlParams</ID>
+          <ToolTip>Sql Parametreleri</ToolTip>
+          <Default>, </Default>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp">
+        <![CDATA[MyConnect.Instance.ExecuteScalar_Decimal($SqlConnection$, $SqlCommand$, CommandType.Text, 60, out MyConnect.Instance.exp$SqlParams$);]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Execute_Reader</Title>
+      <Shortcut>_mer</Shortcut>
+      <Author>Facia026</Author>
+      <Description>Sql Kayıt Döner. DataTable Değer Döner</Description>
+    </Header>
+    <Snippet>
+      <References>
+        <Reference>
+          <Assembly>MyLibrary.dll</Assembly>
+        </Reference>
+      </References>
+      <Imports>
+        <Import>
+          <Namespace>MyLibrary</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Literal>
+          <ID>SqlConnection</ID>
+          <ToolTip>Bağlantı Bilgisi</ToolTip>
+          <Default>""</Default>
+        </Literal>
+        <Literal>
+          <ID>SqlCommand</ID>
+          <ToolTip>Sql Sorgusu</ToolTip>
+          <Default>""</Default>
+        </Literal>
+        <Literal>
+          <ID>SqlParams</ID>
+          <ToolTip>Sql Parametreleri</ToolTip>
+          <Default>, </Default>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp">
+        <![CDATA[MyConnect.Instance.ExecuteReader($SqlConnection$, $SqlCommand$, CommandType.Text, 60, out MyConnect.Instance.exp$SqlParams$);]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>mbox Soru</Title>
+      <Shortcut>_myMboxSoru</Shortcut>
+      <Author>Facia026</Author>
+      <Description>Soru sorar</Description>
+    </Header>
+    <Snippet>
+      <References>
+        <Reference>
+          <Assembly>System.Windows.Forms.dll</Assembly>
+        </Reference>
+      </References>
+      <Imports>
+        <Import>
+          <Namespace>System.Windows.Forms</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Literal>
+          <ID>Soru</ID>
+          <ToolTip>Soru Bilgisi</ToolTip>
+          <Default></Default>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp">
+        <![CDATA[MessageBox.Show($Soru$, "KULLANICI BİLGİSİ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>mbox Bilgi</Title>
+      <Shortcut>_myMboxBilgi</Shortcut>
+      <Author>Facia026</Author>
+      <Description>Bilgi Verir</Description>
+    </Header>
+    <Snippet>
+      <References>
+        <Reference>
+          <Assembly>System.Windows.Forms.dll</Assembly>
+        </Reference>
+      </References>
+      <Imports>
+        <Import>
+          <Namespace>System.Windows.Forms</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Literal>
+          <ID>Bilgi</ID>
+          <ToolTip>Bilgi Bilgisi</ToolTip>
+          <Default></Default>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp">
+        <![CDATA[MessageBox.Show($Bilgi$, "KULLANICI BİLGİSİ", MessageBoxButtons.OK, MessageBoxIcon.Information);]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>mbox Uyari</Title>
+      <Shortcut>_myMboxUyari</Shortcut>
+      <Author>Facia026</Author>
+      <Description>Uyarı Verir</Description>
+    </Header>
+    <Snippet>
+      <References>
+        <Reference>
+          <Assembly>System.Windows.Forms.dll</Assembly>
+        </Reference>
+      </References>
+      <Imports>
+        <Import>
+          <Namespace>System.Windows.Forms</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Literal>
+          <ID>Uyari</ID>
+          <ToolTip>Uyarı Bilgisi</ToolTip>
+          <Default></Default>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp">
+        <![CDATA[MessageBox.Show($Uyari$, "KULLANICI BİLGİSİ", MessageBoxButtons.OK, MessageBoxIcon.Warning);]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
